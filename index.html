@@ -3,164 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un Abogado Siempre a Tu Lado | Servicios Legales</title>
+    <title>Un Abogado Siempre a Tu Lado | Soluciones Legales</title>
     <style>
         :root {
-            --azul-oscuro: #1a2530;
-            --dorado: #bfa15f;
-            --gris-claro: #f4f6f8;
+            --azul-principal: #0b1522;
+            --azul-intermedio: #16263b;
+            --dorado: #bfa363;
+            --gris-fondo: #f4f6f9;
             --blanco: #ffffff;
-            --texto: #333333;
+            --texto: #2d3748;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
         }
 
         body {
-            background-color: var(--gris-claro);
+            background-color: var(--gris-fondo);
             color: var(--texto);
             line-height: 1.6;
         }
 
-        header {
-            background-color: var(--azul-oscuro);
+        /* Encabezado Estratégico de Captación */
+        .hero {
+            background: linear-gradient(rgba(11, 21, 34, 0.9), rgba(22, 38, 59, 0.9));
             color: var(--blanco);
+            padding: 6rem 1.5rem;
             text-align: center;
-            padding: 3rem 1rem;
             border-bottom: 4px solid var(--dorado);
         }
 
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
             letter-spacing: 1px;
         }
 
-        header p {
+        .hero p {
+            font-size: 1.3rem;
             color: var(--dorado);
-            font-size: 1.2rem;
-            font-weight: 500;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 0 1rem;
-        }
-
-        .servicios-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--blanco);
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            padding: 2rem;
-            border-top: 5px solid var(--azul-oscuro);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-top-color: var(--dorado);
-        }
-
-        .card h3 {
-            color: var(--azul-oscuro);
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid var(--gris-claro);
-            padding-bottom: 0.5rem;
-        }
-
-        .card p {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 1.5rem;
-        }
-
-        .btn-whatsapp {
+        .cta-principal {
             display: inline-block;
             background-color: #25D366;
             color: var(--blanco);
             text-decoration: none;
-            padding: 0.7rem 1.5rem;
-            border-radius: 5px;
+            padding: 1rem 2rem;
             font-weight: bold;
-            text-align: center;
-            width: 100%;
-            transition: background-color 0.3s ease;
+            font-size: 1.2rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            font-family: Arial, sans-serif;
         }
 
-        .btn-whatsapp:hover {
+        .cta-principal:hover {
             background-color: #128C7E;
+            transform: translateY(-2px);
         }
 
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        /* Sección Quiénes Somos e Identidad */
+        .bloque-identidad {
+            background: var(--blanco);
+            padding: 3rem;
+            border-radius: 4px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            margin-bottom: 4rem;
+            border-left: 5px solid var(--dorado);
+        }
+
+        .bloque-identidad h2 {
+            color: var(--azul-principal);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bloque-identidad p {
+            font-size: 1.15rem;
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            color: #4a5568;
+        }
+
+        /* Sección de Enfoque / Captación */
+        .enfoque-captacion {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .enfoque-captacion h2 {
+            color: var(--azul-principal);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+
+        .grid-captacion {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .item-captacion {
+            background: var(--blanco);
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .item-captacion h3 {
+            color: var(--azul-intermedio);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--dorado);
+            padding-bottom: 0.5rem;
+        }
+
+        .item-captacion p {
+            font-size: 1rem;
+            color: #718096;
+        }
+
+        /* Footer */
         footer {
-            background-color: var(--azul-oscuro);
+            background-color: var(--azul-principal);
             color: var(--blanco);
             text-align: center;
-            padding: 1.5rem 1rem;
-            margin-top: 4rem;
-            font-size: 0.9rem;
+            padding: 2rem 1rem;
+            font-size: 0.95rem;
             border-top: 3px solid var(--dorado);
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <section class="hero">
         <h1>UN ABOGADO SIEMPRE A TU LADO</h1>
-        <p>Bufete Jurídico Luciano & Asociados</p>
-    </header>
+        <p>"Protección legal inmediata y soluciones estratégicas para resguardar su patrimonio, su tranquilidad familiar y sus derechos corporativos."</p>
+        <a href="https://wa.me/18296373747" target="_blank" class="cta-principal">Iniciar Consulta Legal Inmediata</a>
+    </section>
 
     <div class="container">
-        <div class="servicios-grid">
+        
+        <article class="bloque-identidad">
+            <h2>Quiénes Somos</h2>
+            <p>
+                Somos una firma jurídica de vanguardia fundada bajo el principio del acompañamiento total y la defensa vertical. Rompemos con la distancia y la frialdad de la abogacía tradicional para convertirnos en los aliados estratégicos que usted y su empresa necesitan en los momentos de mayor complejidad legal.
+            </p>
+            <p>
+                Nuestra práctica se basa en la pulcritud procesal, la lealtad absoluta y el rigor científico. Nos especializamos en estructurar soluciones preventivas y corporativas eficientes, así como en la resolución de litigios complejos en materia penal, inmobiliaria, civil y regulación bancaria, garantizando siempre un blindaje legal sólido y oportuno.
+            </p>
+        </article>
 
-            <div class="card">
-                <h3>1. Defensa Penal y Procesal</h3>
-                <p>Asistencia legal estratégica y defensa vertical en materia penal y litigios procesales. Protegemos tus derechos en cada etapa jurídica.</p>
-                <a href="https://wa.me/18296373747" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
+        <section class="enfoque-captacion">
+            <h2>Nuestra Asesoría Integral</h2>
+            <div class="grid-captacion">
+                
+                <div class="item-captacion">
+                    <h3>Defensa y Litigios</h3>
+                    <p>Protección procesal vertical en materia penal y civil. Asistencia estratégica en tribunales.</p>
+                </div>
+
+                <div class="item-captacion">
+                    <h3>Blindaje Inmobiliario</h3>
+                    <p>Saneamiento, deslindes y regularización de títulos de propiedad ante la Jurisdicción Inmobiliaria.</p>
+                </div>
+
+                <div class="item-captacion">
+                    <h3>Derecho Corporativo</h3>
+                    <p>Constitución de sociedades comerciales, contratos a la medida y blindaje preventivo empresarial.</p>
+                </div>
+
+                <div class="item-captacion">
+                    <h3>Regulación Bancaria</h3>
+                    <p>Defensa del usuario financiero frente a cláusulas abusivas y contratos de adhesión.</p>
+                </div>
+
             </div>
+        </section>
 
-            <div class="card">
-                <h3>2. Derecho Corporativo y Societario</h3>
-                <p>Asesoría integral para empresas, constitución de sociedades, contratos comerciales y blindaje legal corporativo a tu medida.</p>
-                <a href="https://wa.me/18296373747" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
-            </div>
-
-            <div class="card">
-                <h3>3. Derecho Laboral y Contratos</h3>
-                <p>Redacción, revisión y manejo de contratos de trabajo, representación en conflictos laborales y gestión de derechos de empleadores y trabajadores.</p>
-                <a href="https://wa.me/18296373747" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
-            </div>
-
-            <div class="card">
-                <h3>4. Cláusulas Abusivas y Derecho Bancario</h3>
-                <p>Especialistas en la defensa del consumidor financiero contra abusos bancarios, revisión de contratos de préstamos y reclamaciones.</p>
-                <a href="https://wa.me/18296373747" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
-            </div>
-
-            <div class="card">
-                <h3>5. Saneamiento y Títulos de Propiedad</h3>
-                <p>Regularización de inmuebles, deslindes, procesos de saneamiento ante la Jurisdicción Inmobiliaria y total seguridad en tus títulos.</p>
-                <a href="https://wa.me/18296373747" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
-            </div>
-
-            <div class="card">
-                <h3>6. Herencias y Sucesiones</h3>
-                <p>Gestión legal integral para la determinación de herederos, partición de bienes e impuestos sucesorales con la mayor pulcritud familiar.</p>
-                <a href="https://wa.me/18296373747" target="_blank" class="btn-whatsapp">Consultar por WhatsApp</a>
-            </div>
-
-        </div>
     </div>
 
     <footer>
