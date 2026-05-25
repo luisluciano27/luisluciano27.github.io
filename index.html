@@ -2,33 +2,42 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Un Abogado Siempre a Tu Lado | Plataforma Legal Global</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Abogado Siempre a Tu Lado | Asistencia Legal RD</title>
     <style>
-        body { font-family: 'Montserrat', sans-serif; background: #f4f4f4; color: #333; }
-        .hero { background: #0f2027; color: white; padding: 60px; text-align: center; border-bottom: 5px solid #c5a059; }
-        .btn-wa { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
-        .card { background: white; padding: 25px; border-left: 5px solid #c5a059; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .diaspora { padding: 40px; background: white; text-align: center; border-top: 2px solid #ddd; }
+        :root { --azul-marino: #0f2027; --oro: #c5a059; --texto: #000; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--texto); line-height: 1.6; }
+        .hero { background: var(--azul-marino); color: white; padding: 60px 20px; text-align: center; border-bottom: 5px solid var(--oro); }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px 20px; background: #f4f4f4; }
+        .card { background: white; padding: 25px; border-left: 5px solid var(--oro); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn { display: inline-block; padding: 12px 25px; margin-top: 10px; background: var(--oro); color: white; text-decoration: none; font-weight: bold; border-radius: 4px; }
+        .diaspora { padding: 60px 20px; background: white; text-align: center; border-top: 2px solid #ddd; }
     </style>
 </head>
 <body>
     <header class="hero">
         <h1>UN ABOGADO SIEMPRE A TU LADO</h1>
-        <p>Plataforma de asistencia legal en República Dominicana para la diáspora en EE.UU. y Europa.</p>
-        <a href="https://wa.me/TU_NUMERO_PLATAFORMA" class="btn-wa">Iniciar Consulta Inmediata</a>
+        <p>Tu patrimonio y derechos protegidos, sin importar la distancia.</p>
+        <a href="https://wa.me/TUNUMERODEPLATAFORMA" class="btn">Iniciar Consulta Inmediata</a>
     </header>
+
     <section class="services-grid">
-        <div class="card"><h3>Saneamiento Inmobiliario</h3><p>Título y deslindes.</p></div>
-        <div class="card"><h3>Derecho Bancario</h3><p>Defensa contra abusos financieros.</p></div>
-        <div class="card"><h3>Sucesiones y Herencias</h3><p>Gestión sucesoral ágil.</p></div>
-        <div class="card"><h3>Derecho Laboral</h3><p>Defensa de trabajadores y empresas.</p></div>
-        <div class="card"><h3>Derecho Corporativo</h3><p>Formalización y blindaje de negocios.</p></div>
-        <div class="card"><h3>Defensa Penal</h3><p>Representación técnica de alto rigor.</p></div>
+        <div class="card"><h3>Saneamiento y Deslinde</h3><p>Proteja su propiedad con títulos definitivos.</p><a href="#" class="btn">Consultar</a></div>
+        <div class="card"><h3>Cláusulas Abusivas</h3><p>Defensa frente a abusos financieros.</p><a href="#" class="btn">Reclamar</a></div>
+        <div class="card"><h3>Herencias y Sucesiones</h3><p>Gestión sucesoral ágil y transparente.</p><a href="#" class="btn">Consultar</a></div>
+        <div class="card"><h3>Litigios Laborales</h3><p>Blindaje legal y cálculo de prestaciones.</p><a href="#" class="btn">Evaluar</a></div>
+        <div class="card"><h3>Blindaje Corporativo</h3><p>Formalice su empresa con seguridad.</p><a href="#" class="btn">Formalizar</a></div>
+        <div class="card"><h3>Defensa Penal</h3><p>Representación estratégica y rigurosa.</p><a href="#" class="btn">Solicitar Defensa</a></div>
     </section>
+
     <section class="diaspora">
-        <h2>Conexión Global con la Diáspora</h2>
-        <p>Tu patrimonio en RD protegido sin importar la distancia. Formulario de conexión para EE.UU. y Europa.</p>
+        <h2>Conexión Global (EE.UU. y Europa)</h2>
+        <p>¿Resides en el extranjero y tienes un caso en RD? Resolvemos tu proceso sin que debas viajar.</p>
+        <form>
+            <input type="text" placeholder="Nombre completo" required><br><br>
+            <input type="text" placeholder="WhatsApp (+1 o +34...)" required><br><br>
+            <button class="btn">Solicitar Asistencia desde el Extranjero</button>
+        </form>
     </section>
 </body>
 </html>
